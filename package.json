@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "dependencies": {
+    "is-port-reachable": "^4.0.0",
+    "local-devices": "^3.2.0"
+  },
+  "bin": {
+    "tictactoe": "tictactoe.js"
+  },
+  "name": "tictactoe",
+  "version": "1.0.1",
+  "description": "A multiplayer game of Tic Tac Toe",
+  "main": "none",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thecoder08",
+  "license": "MIT"
+}
