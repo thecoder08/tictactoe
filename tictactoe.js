@@ -1,8 +1,9 @@
 var { connect, createServer } = require('net');
-var find = require('is-port-reachable');
+var find = require('local-devices');
 var isPortReachable = require('is-port-reachable');
 
 var gameBoard = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']];
+
 (async function() {
 if (process.argv[2] == 'host') {
   var peer = false;
@@ -207,6 +208,7 @@ else {
   console.log('tictactoe host: Host a game of Tic Tac Toe');
   console.log('tictactoe join: Join a LAN game of Tic Tac Toe');
 }
+})();
 
 function wait(delay) {
   return new Promise(function(resolve, reject) {
@@ -255,7 +257,6 @@ function didIWin(letter) {
   }
   return false;
 }
-})();
 function isCatsGame() {
   var count = 0;
   for (var i = 0; i < gameBoard.length; i++) {
