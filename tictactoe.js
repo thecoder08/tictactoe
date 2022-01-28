@@ -3,7 +3,7 @@ var find = require('is-port-reachable');
 var isPortReachable = require('is-port-reachable');
 
 var gameBoard = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']];
-
+(async function() {
 if (process.argv[2] == 'host') {
   var peer = false;
   createServer(async function(socket) {
@@ -255,6 +255,7 @@ function didIWin(letter) {
   }
   return false;
 }
+})();
 function isCatsGame() {
   var count = 0;
   for (var i = 0; i < gameBoard.length; i++) {
