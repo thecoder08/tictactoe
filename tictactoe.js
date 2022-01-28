@@ -1,6 +1,6 @@
-import { connect, createServer } from 'net';
-import find from 'local-devices';
-import isPortReachable from 'is-port-reachable';
+var { connect, createServer } = require('net');
+var find = require('is-port-reachable');
+var isPortReachable = require('is-port-reachable');
 
 var gameBoard = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']];
 

@@ -1,7 +1,6 @@
 {
-  "type": "module",
   "dependencies": {
-    "is-port-reachable": "^4.0.0",
+    "is-port-reachable": "^3.1.0",
     "local-devices": "^3.2.0"
   },
   "bin": {
